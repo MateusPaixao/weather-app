@@ -2,12 +2,12 @@
 
 *Aqui serão listadas as etapas necessárias para realização do teste para a empresa Builders*
 
-- [ ] Criar projeto CRA 
-- [ ] Configurar projeto e adicionar primeiras bibliotecas
-- [ ] Criar estrutura inicial
-- [ ] Criar Componente CurrentWeather (UI)
-- [ ] Criar Componente ForecastWeather (UI)
-- [ ] Criar Componente CardWeekDays (UI)
+- [x] Criar projeto CRA 
+- [x] Configurar projeto e adicionar primeiras bibliotecas
+- [x] Criar estrutura inicial
+- [x] Criar Componente CurrentWeather (UI)
+- [x] Criar Componente ForecastWeather (UI)
+- [x] Criar Componente CardWeekDays (UI)
 - [ ] Primeiros testes com a API
 - [ ] Adaptar componentes com resultado da API
 - [ ] Testes unitários
