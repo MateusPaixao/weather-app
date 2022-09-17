@@ -2,15 +2,17 @@ import React, { Fragment } from 'react';
 
 import { CurrentWeatherCard, ForecastWeatherCard } from 'components';
 
-import GlobalStyles, { Container } from 'GlobalStyles';
+import GlobalStyles, { Container, Content } from 'GlobalStyles';
 
 function App() {
   return (
     <Fragment>
       <GlobalStyles />
       <Container>
-        <CurrentWeatherCard />
-        <ForecastWeatherCard />
+        <Content>
+          <CurrentWeatherCard />
+          <ForecastWeatherCard />
+        </Content>
       </Container>
     </Fragment>
   );

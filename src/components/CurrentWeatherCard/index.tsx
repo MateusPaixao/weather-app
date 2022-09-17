@@ -8,10 +8,10 @@ const CurrentWeatherCard: React.FC = () => {
   return (
     <Container>
         <DateLocation>
-          <p>
-            <strong>Saturday</strong>
+          <section>
+            <h2>Saturday</h2>
             <span>15 Jan 2019</span>
-          </p>
+          </section>
           <p>
             <MapPin size={18} /> <span>Paris, FR</span>
           </p>
@@ -19,10 +19,10 @@ const CurrentWeatherCard: React.FC = () => {
 
         <WeatherInfo>
           <Sun size={60} />
-          <p>
+          <section>
             <h1>29°C</h1>
             <span>Sunny</span>
-          </p>
+          </section>
         </WeatherInfo> 
     </Container>
   )
