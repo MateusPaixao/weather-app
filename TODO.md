@@ -15,10 +15,11 @@
 - [x] Criar componente Loading (UI)
 - [x] Adaptar componente ForecastWeather com resultado da API
 - [x] Adaptar componente CardWeekDays com resultado da API
-- [ ] Adicionar lógica de ícones (Helper / Componente)
+- [x] Adicionar lógica de ícones (Helper / Componente)
 - [ ] (WIP) Testes unitários
 - [ ] Ajustar README.md
 - [ ] Subir no GitHub
 
 - [ ] Corrigir tipagem ForecastHelper
+- [ ] Adicionar lógica de cor CurrentWeather component
 - [ ] Organizar CSS
