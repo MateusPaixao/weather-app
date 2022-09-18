@@ -26,7 +26,7 @@ interface CoordProps {
     longitude: number | null,
 }
 
-const WeatherContext = createContext<WeatherContextProps>({} as WeatherContextProps)
+export const WeatherContext = createContext<WeatherContextProps>({} as WeatherContextProps)
 
 export const WeatherProvider: React.FC<WeatherProviderProps>  = ({ children }) => {
 
