@@ -1,5 +1,5 @@
-import React, { useEffect, useState, Fragment } from 'react';
-import { useWeatherContext, CurrentWeatherProps } from 'contexts/WeatherContext'
+import React, { Fragment } from 'react';
+import { useWeatherContext } from 'contexts/WeatherContext'
 import { MapPin, Sun } from 'react-feather'
 
 import Loading from 'components/Loading'
@@ -8,18 +8,8 @@ import { Container, DateLocation, WeatherInfo } from './styles';
 
 const CurrentWeatherCard: React.FC = () => {
 
-  const { getCurrentWeather, isLoadingCurrent } = useWeatherContext()
-  const [weather, setWeather] = useState({} as CurrentWeatherProps)
-
-  useEffect(() => {
-    getCurrentWeather()
-    .then((data) => {
-      if(data){
-        setWeather(data)
-      }
-    })
-  }, [getCurrentWeather])
-
+  const { currentWeather, isLoadingCurrent } = useWeatherContext()
+  
   return (
     <Container>
         {isLoadingCurrent ? (
@@ -28,19 +18,19 @@ const CurrentWeatherCard: React.FC = () => {
           <Fragment>
             <DateLocation>
               <section>
-                <h2>{weather.weekDay}</h2>
-                <span>{weather.date}</span>
+                <h2>{currentWeather.weekDay}</h2>
+                <span>{currentWeather.date}</span>
               </section>
               <p>
-                <MapPin size={18} /> <span>{weather.location}</span>
+                <MapPin size={18} /> <span>{currentWeather.location}</span>
               </p>
             </DateLocation>
 
             <WeatherInfo>
               <Sun size={60} />
               <section>
-                <h1>{weather.temp}</h1>
-                <span>{weather.description}</span>
+                <h1>{currentWeather.temp}</h1>
+                <span>{currentWeather.description}</span>
               </section>
             </WeatherInfo> 
           </Fragment>
