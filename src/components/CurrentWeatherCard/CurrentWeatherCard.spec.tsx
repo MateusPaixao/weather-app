@@ -38,13 +38,27 @@ const customRender = (children: ReactNode, props: any) => {
 }
 
 describe('CurrentWeatherCard Component', () => {
+    it('should renders with loading', () => {
+        const providerProps = {
+            isLoadingCurrent: true,
+            // currentWeather: currentWeatherMocked
+        }
+
+        const element = customRender(<CurrentWeatherCard />, providerProps)
+
+        const loading = screen.getByTestId('loading')
+        expect(loading).toBeInTheDocument()
+
+        console.log(element.container.innerHTML)
+    })
+
     it('should renders correctly', () => {
         const providerProps = {
             isLoadingCurrent: false,
             currentWeather: currentWeatherMocked
         }
 
-        const element = customRender(<CurrentWeatherCard />, providerProps)
+        customRender(<CurrentWeatherCard />, providerProps)
 
         Object.keys(currentWeatherMocked).forEach(prop => {
             if(prop !== 'icon'){
@@ -53,6 +67,5 @@ describe('CurrentWeatherCard Component', () => {
         })
 
         // TODO: build icon logic and test it
-        console.log(element.container.innerHTML)
     })
 })
