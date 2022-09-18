@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { useWeatherContext } from 'contexts/WeatherContext'
-import { MapPin, Sun } from 'react-feather'
+import { MapPin } from 'react-feather'
 
-import Loading from 'components/Loading'
+import { Loading, IconWeather } from 'components'
 
 import { Container, DateLocation, WeatherInfo } from './styles';
 
@@ -27,7 +27,7 @@ const CurrentWeatherCard: React.FC = () => {
             </DateLocation>
 
             <WeatherInfo>
-              <Sun size={60} />
+              <IconWeather name={currentWeather.icon} size={60} />
               <section>
                 <h1>{currentWeather.temp}</h1>
                 <span>{currentWeather.description}</span>

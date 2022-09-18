@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun } from 'react-feather'
+import { IconWeather } from 'components'
 
 import { ForecastWeatherProps } from 'contexts/WeatherContext'
 
@@ -13,7 +13,7 @@ interface CardWeekDayProps extends ForecastWeatherProps {
 const CardWeekDay: React.FC<CardWeekDayProps> = (props) => {
   return (
     <Container onClick={() => props.onClick()} className={props.selected ? 'selected' : ''}>
-      <Sun />
+      <IconWeather name={props.icon} />
       <span>{props.weekDay}</span>
       <strong>{props.temp}</strong>
     </Container>
