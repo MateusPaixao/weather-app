@@ -5,6 +5,7 @@ export const Container = styled.div`
     border-radius: 25px;
     padding: 20px 25px;
     width: 300px;
+    min-height: 366px;
     color: #ffffff;
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
     transition: transform 300ms ease;
@@ -24,6 +25,7 @@ export const Container = styled.div`
 export const DateLocation = styled.div`
     section span { 
         display: block; 
+        text-transform: capitalize;
     }
 
     p {
@@ -41,6 +43,10 @@ export const DateLocation = styled.div`
             margin-left: 8px;
         }
     }
+
+    h2 {
+        text-transform: capitalize;
+    }
 `
 
 export const WeatherInfo = styled.div`
@@ -53,6 +59,7 @@ export const WeatherInfo = styled.div`
 
         span {
             font-weight: bold;
+            text-transform: capitalize;
         }
     }
 `

@@ -1,6 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
-
-import axios from 'axios'
+import React, { Fragment } from 'react';
 
 import { CurrentWeatherCard, ForecastWeatherCard } from 'components';
 
@@ -41,31 +39,6 @@ function App() {
   //   })
   // }, [])
 
-
-  useEffect(() => {
-    // axios.get('https://api.openweathermap.org/data/2.5/weather', {
-    //   params: {
-    //     units: 'metric',
-    //     lat: -23.500830,
-    //     lon: -46.586660,
-    //     appid: '65504526a6b2ca69cafc678b6921176c',
-    //     lang: 'pt_br',
-    //   }
-    // }).then(({ data }) => {
-    //   console.log(data)
-    // })
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        console.log("Latitude is :", position.coords.latitude);
-        console.log("Longitude is :", position.coords.longitude);
-      },
-      (error) => {
-        console.log(error)
-      }
-    );
-
-  }, [])
   return (
     <Fragment>
       <GlobalStyles />
