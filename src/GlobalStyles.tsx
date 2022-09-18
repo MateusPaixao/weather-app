@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+export const colors = {
+    whiteNeutral: '#ffffff',
+    greyMedium: '#cccccc',
+    purpleMedium: '#5151E5',
+}
+
 export const Container = styled.div`
     max-width: 100%;
     min-height: 100vh;
