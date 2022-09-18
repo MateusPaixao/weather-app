@@ -17,8 +17,8 @@
 - [x] Adaptar componente CardWeekDays com resultado da API
 - [x] Adicionar lógica de ícones (Helper / Componente)
 - [x] Testes unitários
-- [ ] Ajustar README.md
-- [ ] Subir no GitHub
+- [x] Ajustar README.md
+- [x] Subir no GitHub
 
 - [ ] Corrigir tipagem ForecastHelper
 - [ ] Adicionar lógica de cor CurrentWeather component
