@@ -16,7 +16,7 @@
 - [x] Adaptar componente ForecastWeather com resultado da API
 - [x] Adaptar componente CardWeekDays com resultado da API
 - [x] Adicionar lógica de ícones (Helper / Componente)
-- [ ] (WIP) Testes unitários
+- [x] Testes unitários
 - [ ] Ajustar README.md
 - [ ] Subir no GitHub
 
