@@ -1,47 +1,106 @@
-# Getting Started with Create React App
+# Weather APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
+Este projeto foi realizado como teste técnico para desenvolvedor front end para a Builders, e foi iniciado a partir do [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  
+![Projeto weather app Builders](src/assets/images/capa.jpeg)
+![Projeto weather app Builders](src/assets/images/capa-mobile.jpeg)
 
-In the project directory, you can run:
+  
+
+## O que encontrará nesse README
+
+  
+
+- [Scripts disponíveis](#scritps)
+
+- [Arquitetura do projeto](#arquitetura)
+
+- [Links úteis](#links-uteis)
+
+- [Agradecimento](#agradecimento)
+
+  
+
+<a  id="scritps"></a>
+
+## Scripts disponíveis
+
+  
+
+No projeto você pode rodar a partir do terminal os seguintes comandos
+
+  
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para rodar a aplicação em modo de desenvolvimento (lembre-se de instalar as dependência na raiz do projeto com o comando `yarn` )
+
+  
+
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no seu navegador, a página irá atualizar automaticamente após salvar os arquivos, e todos os erros serão apresentados em tela caso houver
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+Para rodar todos os testes em watch mode.
+
+  
+### `yarn test:coverage`
+
+
+Para rodar todos os testes em watch mode e gerar o coverage report.
+
+  
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para buildar a aplicação para modo de produção, realizando todas as minificações para uma melhor performance e gerando o bundle completo da aplicação. Após esse comando sua aplicação estará pronta para o deploy na pasta `build/` para maiores informações ver sessão [deployment](https://facebook.github.io/create-react-app/docs/deployment) na documentação oficial.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+  
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para ejetar sua aplicação do Create React App, esse comando não poderá ser desfeito.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<a  id="arquitetura"></a>
 
-## Learn More
+## Representação simplificada do projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# weather-app
+![Arquitetura do projeto weather app](src/assets/images/map-struct.jpeg)
+
+  
+
+<a  id="links-uteis"></a>
+
+## Links uteis
+
+  
+
+- [Desafio Técnico](https://platformbuilders.notion.site/Desafio-8dcf7aa5988041ab8fb1b7df6102d4d0) Enunciado do desafio proposto para esse projeto.
+- [TODO.md](https://github.com/MateusPaixao/TODO.md) utilizado para gerenciar os passos para finalização desse projeto e adicionado possíveis melhorias.
+
+- [Stack Edit](https://stackedit.io/) Utilizado para editar esse Readme
+- [Feather](https://feathericons.com/) Biblioteca de ícones utilizada nesse projeto
+- [Open Weather API](https://openweathermap.org/) API utilizada nesse projeto
+
+  
+
+<a  id="agradecimento"></a>
+
+## Agradecimento
+
+  
+
+Agradeço a oportunidade de realizar o teste, espero que tenha ficado dentro do esperado, dei o melhor dentro do período que estabeleci. Obrigado! =D
