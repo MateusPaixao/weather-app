@@ -3,6 +3,7 @@
 *Aqui serão listadas as etapas necessárias para realização do teste para a empresa Builders*
 
 - [x] Criar projeto CRA 
+- [x] Criar TODO.md
 - [x] Configurar projeto e adicionar primeiras bibliotecas
 - [x] Criar estrutura inicial
 - [x] Criar Componente CurrentWeather (UI)
@@ -12,11 +13,10 @@
 - [x] Criar contexto para a aplicação
 - [x] Adaptar componente CurrentWeather com resultado da API
 - [x] Criar componente Loading (UI)
-- [ ] Adicionar lógica de ícones (Helper)
-- [ ] Adaptar componente ForecastWeather com resultado da API
-- [ ] Adaptar componente CardWeekDays com resultado da API
+- [x] Adaptar componente ForecastWeather com resultado da API
+- [x] Adaptar componente CardWeekDays com resultado da API
+- [ ] Adicionar lógica de ícones (Helper / Componente)
 - [ ] (WIP) Testes unitários
-- [ ] Criar TODO.md
 - [ ] Ajustar README.md
 - [ ] Subir no GitHub
 
