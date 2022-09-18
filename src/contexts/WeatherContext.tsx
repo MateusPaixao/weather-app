@@ -108,6 +108,8 @@ export const WeatherProvider: React.FC<WeatherProviderProps>  = ({ children }) =
             setIsLoadingForecast(false);
             const forecast = ForecastHelper.getWeek(data.list)
             const [selected] = forecast
+
+            console.log(forecast)
             setForecastWeather(forecast)
             setSelectedForecast(selected)
         }
