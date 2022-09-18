@@ -19,3 +19,5 @@
 - [ ] Criar TODO.md
 - [ ] Ajustar README.md
 - [ ] Subir no GitHub
+
+- [ ] Corrigir tipagem ForecastHelper

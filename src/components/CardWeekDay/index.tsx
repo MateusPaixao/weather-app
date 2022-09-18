@@ -1,14 +1,21 @@
 import React from 'react';
 import { Sun } from 'react-feather'
 
+import { ForecastWeatherProps } from 'contexts/WeatherContext'
+
 import { Container } from './styles';
 
-const CardWeekDay: React.FC = () => {
+interface CardWeekDayProps extends ForecastWeatherProps {
+  selected: boolean,
+  onClick: () => void,
+}
+
+const CardWeekDay: React.FC<CardWeekDayProps> = (props) => {
   return (
-    <Container>
+    <Container onClick={() => props.onClick()} className={props.selected ? 'selected' : ''}>
       <Sun />
-      <span>Tue</span>
-      <strong>29°C</strong>
+      <span>{props.weekDay}</span>
+      <strong>{props.temp}</strong>
     </Container>
   )
 }

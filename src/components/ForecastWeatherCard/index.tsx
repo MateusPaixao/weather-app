@@ -1,42 +1,54 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { useWeatherContext } from 'contexts/WeatherContext'
 
-import { MapPin } from 'react-feather'
+import { RefreshCw } from 'react-feather'
 
-import { CardWeekDay } from 'components'
+import { CardWeekDay, Loading } from 'components'
 
 import { Container, Details, WeekContainer, ButtonContainer } from './styles';
 
 const ForecastWeatherCard: React.FC = () => {
+  const { forecastWeather, selectedForecast, setSelectedForecast, isLoadingForecast, updateWeather } = useWeatherContext()
+
   return (
     <Container>
-        <Details>
-          <li>
-            <span>precipitation</span>
-            <span>0%</span>
-          </li>
-          <li>
-            <span>humidity</span>
-            <span>34%</span>
-          </li>
-          <li>
-            <span>wind</span>
-            <span>0 km/h</span>
-          </li>
-        </Details>
+        { isLoadingForecast ? (
+          <Loading />
+        ) : (
+          <Fragment>
+            <Details>
+              <li>
+                <span>precipitation</span>
+                <span>{selectedForecast.pop}</span>
+              </li>
+              <li>
+                <span>humidity</span>
+                <span>{selectedForecast.humidity}</span>
+              </li>
+              <li>
+                <span>wind</span>
+                <span>{selectedForecast.wind}</span>
+              </li>
+            </Details>
 
-        <WeekContainer>
-          <CardWeekDay />
-          <CardWeekDay />
-          <CardWeekDay />
-          <CardWeekDay />
-        </WeekContainer>
+            <WeekContainer>
+              { forecastWeather.map(day => 
+                <CardWeekDay 
+                  key={day.date} 
+                  onClick={() => setSelectedForecast(day)}
+                  selected={selectedForecast.date === day.date} {...day} 
+                />
+              ) }
+            </WeekContainer>
 
-        <ButtonContainer>
-          <button type="button">
-            <MapPin size={15} />
-            <span>Update Weather</span>
-          </button>
-        </ButtonContainer>
+            <ButtonContainer>
+              <button type="button" onClick={updateWeather}>
+                <RefreshCw size={15} />
+                <span>Update Weather</span>
+              </button>
+            </ButtonContainer>
+          </Fragment>
+        ) }
     </Container>
   )
 }

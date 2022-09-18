@@ -1,7 +1,7 @@
 
 type weekDayType = "long" | "short" | "narrow" | undefined
 
-const getWeekDay = (date = new Date(), type?: weekDayType) => {
+export const getWeekDay = (date = new Date(), type?: weekDayType) => {
     const weekDay = date.toLocaleDateString('pt-BR', {
         weekday: type || 'long',
     })
