@@ -18,15 +18,15 @@ const ForecastWeatherCard: React.FC = () => {
           <Fragment>
             <Details>
               <li>
-                <span>precipitation</span>
+                <span>precipitação</span>
                 <span>{selectedForecast.pop}</span>
               </li>
               <li>
-                <span>humidity</span>
+                <span>umidade</span>
                 <span>{selectedForecast.humidity}</span>
               </li>
               <li>
-                <span>wind</span>
+                <span>vento</span>
                 <span>{selectedForecast.wind}</span>
               </li>
             </Details>
@@ -44,7 +44,7 @@ const ForecastWeatherCard: React.FC = () => {
             <ButtonContainer>
               <button type="button" onClick={updateWeather}>
                 <RefreshCw size={15} />
-                <span>Update Weather</span>
+                <span>Atualizar</span>
               </button>
             </ButtonContainer>
           </Fragment>

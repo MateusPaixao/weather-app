@@ -21,3 +21,4 @@
 - [ ] Subir no GitHub
 
 - [ ] Corrigir tipagem ForecastHelper
+- [ ] Organizar CSS
