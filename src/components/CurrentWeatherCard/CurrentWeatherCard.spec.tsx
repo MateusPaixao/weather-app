@@ -41,15 +41,12 @@ describe('CurrentWeatherCard Component', () => {
     it('should renders with loading', () => {
         const providerProps = {
             isLoadingCurrent: true,
-            // currentWeather: currentWeatherMocked
         }
 
-        const element = customRender(<CurrentWeatherCard />, providerProps)
+        customRender(<CurrentWeatherCard />, providerProps)
 
         const loading = screen.getByTestId('loading')
         expect(loading).toBeInTheDocument()
-
-        console.log(element.container.innerHTML)
     })
 
     it('should renders correctly', () => {
@@ -65,7 +62,5 @@ describe('CurrentWeatherCard Component', () => {
                 expect(screen.getByText(currentWeatherMocked[prop as keyof CurrentWeatherProps])).toBeInTheDocument()    
             }
         })
-
-        // TODO: build icon logic and test it
     })
 })

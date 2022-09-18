@@ -12,7 +12,7 @@ interface CardWeekDayProps extends ForecastWeatherProps {
 
 const CardWeekDay: React.FC<CardWeekDayProps> = (props) => {
   return (
-    <Container onClick={() => props.onClick()} className={props.selected ? 'selected' : ''}>
+    <Container data-testid="card-week-day" onClick={() => props.onClick()} className={props.selected ? 'selected' : ''}>
       <IconWeather name={props.icon} />
       <span>{props.weekDay}</span>
       <strong>{props.temp}</strong>

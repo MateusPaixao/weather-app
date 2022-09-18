@@ -110,7 +110,6 @@ export const WeatherProvider: React.FC<WeatherProviderProps>  = ({ children }) =
             const [selected] = forecast
             setForecastWeather(forecast)
             setSelectedForecast(selected)
-            console.log(forecast)
         }
     }
 
